@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive pricing component</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 25px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <script defer src="script.js"></script>
+  </head>
+
+  <body>
+    <!-- <div class="container"> -->
+    <header>
+      <h2>Simple, traffic-based pricing</h2>
+      <h4 class="little-header">
+        Sign-up for our 30-day trial.
+        <br />
+        No credit card required.
+      </h4>
+    </header>
+
+    <section>
+      <div class="prices">
+        <p class="range-value">100K PAGEVIEWS</p>
+
+        <div class="slide--container">
+          <input
+            type="range"
+            min="0"
+            max="4"
+            value="0"
+            class="range-input"
+            id="myRange"
+          />
+        </div>
+
+        <div style="display: flex; align-items: center; gap: 8px">
+          <p class="price-tag">$16.00</p>
+          <span class="per-time">/month</span>
+        </div>
+      </div>
+
+      <div class="duration">
+        <p class="Monthly">Monthly Billing</p>
+        <label class="switch">
+          <input type="checkbox" class="default" />
+          <span class="toggle-button"></span>
+        </label>
+        <p class="Yearly">Yearly Billing <span class="discount">- 25%</span></p>
+      </div>
+    </section>
+    <article>
+      <div>
+        <div class="article--info">
+          <img src="images/icon-check.svg" alt="" />
+          <p>Unlimited websites</p>
+        </div>
+
+        <div class="article--info">
+          <img src="images/icon-check.svg" alt="" />
+          <p>100% data ownership</p>
+        </div>
+
+        <div class="article--info">
+          <img
+            src="images/icon-check.svg"
+            alt=""
+            style="color: hsl(174, 77%, 80%)"
+          />
+          <p>Email reports</p>
+        </div>
+      </div>
+
+      <button class="button--trial">Start my trial</button>
+    </article>
+    <!-- </div> -->
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Aduroja Pelumi Tolani</a>.
+    </div>
+  </body>
+</html>
